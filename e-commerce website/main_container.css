@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#topnav{
+width: 100vw;
+height:85px;
+position: fixed;
+}
+.navbar{
+/* border:2px solid red; */
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+list-style: none;
+font-family: 'Diphylleia', serif;
+}
+.main{
+    height: 100vh;
+    background-image: url('img01.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.Bgcolor{
+    background-color:rgb(255, 235, 205);
+    /* background-color: black; */
+}
+
+.logo span {
+    font-size: 20px;
+    font-family:cursive;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar_list {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 28px;
+}
+
+.list a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.list a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(109, 33, 60);
+    top: 38px;
+    left: 0;
+    transition: 0.5s ease;
+}
+
+.list a:hover::after {
+    width: 100%;
+}
+
+.items .active {
+    color: rgb(109, 33, 60);
+}
+.items .active::after{
+    width: 100%;
+}
+
+.bi {
+    display:block;
+    font-size: 30px;
+    color: rgb(109, 33, 60);
+}
+
+.bi-list {
+    display: none;
+}
+
+.new {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid red;
+}
+
+#hero-section {
+    width: 40%;
+    height: 60%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.8rem;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    overflow-x:hidden ;
+    font-family: 'Diphylleia', serif;
+}
+
+.hero-heading {
+    font-size: 30px;
+}
+
+.hero-content {
+    font-size: 50px;
+    color:rgb(192, 79, 96);
+}
+
+.hero-message {
+    font-size: 20px;
+    color: rgb(109, 33, 60);
+}
+
+.btn {
+    width: 110px;
+    height: 45px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.btn-shop {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: transparent;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.btn-shop a {
+    text-decoration: none;
+    color: brown;
+    font-weight: 400px;
+}
+.btn-shop:hover{
+    background-color: rgb(230, 28, 95);
+    opacity: 0.4;
+}
+.btn-shop:hover a{
+    color:black;
+}
